@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="1Roof - Revolutionize your supply chain management with real-time blockchain transparency.">
+    <title>1Roof - Revolutionize Your Supply Chain</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        header, main, footer {
+            padding: 1rem 0;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        header h1, header p, main h2 {
+            margin: 0.5rem;
+        }
+        .main-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .value-props, .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .value-prop, .feature {
+            flex: 1 1 calc(33% - 1rem);
+            padding: 1rem;
+            background: #ecf0f1;
+            border-radius: 8px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            cursor: pointer;
+            margin: 20px auto;
+        }
+        .cta-button:hover {
+            background: #c0392b;
+        }
+        img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        nav {
+            background: #34495e;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        nav ul li a:hover {
+            background: #2c3e50;
+        }
+        @media (max-width: 768px) {
+            .value-prop, .feature {
+                flex: 1 1 100%;
+            }
+            .container {
+                width: 95%;
+            }
+        }
+        /* Modal styles remain unchanged */
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="/api/placeholder/100/50" alt="1Roof Logo" class="logo" loading="lazy">
+        <ul>
+            <li><a href="#features" onclick="scrollToSection('features')">Features</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>Revolutionize Your Supply Chain with Real-Time Blockchain Transparency</h1>
+            <p>1Roof integrates all your supply chain processes into one seamless platform, powered by blockchain for efficiency, transparency, and security.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="main-content">
+            <img src="/api/placeholder/800/400" alt="Supply Chain Management" class="hero-image" loading="lazy">
+            
+            <h2>Why Choose 1Roof?</h2>
+            <div class="value-props">
+                <div class="value-prop">
+                    <h3>Real-Time Tracking</h3>
+                    <p>Know where your products are at all times with blockchain-backed data.</p>
+                </div>
+                <div class="value-prop">
+                    <h3>Affordable</h3>
+                    <p>An all-in-one supply chain solution at a fraction of the cost of traditional systems.</p>
+                </div>
+                <div class="value-prop">
+                    <h3>Simplified Management</h3>
+                    <p>Automate procurement, inventory, and logistics in one easy-to-use platform.</p>
+                </div>
+            </div>
+
+            <button class="cta-button" onclick="openModal()">Sign up for a demo</button>
+
+            <h2 id="features">Key Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Real-Time Inventory Management</h3>
+                </div>
+                <div class="feature">
+                    <h3>Blockchain-Powered Data Security</h3>
+                </div>
+                <div class="feature">
+                    <h3>Customizable Alerts for Stock Levels</h3>
+                </div>
+                <div class="feature">
+                    <h3>Integrated Supplier and Procurement System</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2 id="contact">Contact Us</h2>
+        <p>Email: omarwazani10@gmail.com | Phone: +962 7 9999 6661</p>
+    </footer>
+
+    <div id="modal">
+        <div class="modal-content">
+            <h2>Sign Up for a Demo</h2>
+            <!-- Form integrated with Formspree -->
+            <form action="https://formspree.io/f/mpwzaoal" method="POST">
+                <label>
+                    Your name:
+                    <input type="text" name="name" required>
+                </label><br>
+                <label>
+                    Your email:
+                    <input type="email" name="email" required>
+                </label><br>
+                <label>
+                    Your company:
+                    <input type="text" name="company">
+                </label><br><br>
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function openModal() {
+            document.getElementById('modal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        document.getElementById('demo-form').onsubmit = function(event) {
+            event.preventDefault();
+            alert('Thank you for your interest! We will contact you soon to schedule your demo.');
+            closeModal();
+        }
+
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('modal')) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
